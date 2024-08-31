@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import com.mysql.cj.xdevapi.Statement;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -18,7 +20,7 @@ public class Main {
 		}
 		try {
 			Connection con=DriverManager.getConnection(url, userName, password);
-			System.out.println(con);
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
